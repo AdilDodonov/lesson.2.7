@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_namber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:lines="1"
+            android:text="@string/_0"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textSize="80sp" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="4">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete"
+                style="@style/CostomBaseButton.Silver"
+                android:onClick="acClik"
+                android:text="@string/ac"
+                android:textSize="20sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plas_and_minus"
+                style="@style/CostomBaseButton.Silver"
+                android:text="@string/plas_minas"
+                android:textSize="22sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/persent"
+                style="@style/CostomBaseButton.Silver"
+                android:text="@string/persent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_division"
+                style="@style/CostomBaseButton.Orange"
+                android:onClick="operation"
+                android:text="@string/divison"
+                tools:ignore="UsingOnClickInXml" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="4"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_seven"
+                style="@style/CostomBaseButton"
+                android:onClick="clikNumber"
+                android:text="@string/_7"
+                android:textSize="20sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_eiqht"
+                style="@style/CostomBaseButton"
+                android:onClick="clikNumber"
+                android:text="@string/_8"
+                android:textSize="19sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nine"
+                style="@style/CostomBaseButton"
+                android:onClick="clikNumber"
+                android:text="@string/_9"
+                android:textSize="20sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_multiplications"
+                style="@style/CostomBaseButton.Orange"
+                android:onClick="operation"
+                android:text="@string/multiplications"
+                android:textSize="20sp"
+                tools:ignore="UsingOnClickInXml" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="4">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_foot"
+                style="@style/CostomBaseButton"
+
+                android:onClick="clikNumber"
+                android:text="@string/_4"
+                android:textSize="18sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_five"
+                style="@style/CostomBaseButton"
+
+                android:onClick="clikNumber"
+                android:text="@string/_5"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/six"
+                style="@style/CostomBaseButton"
+
+                android:onClick="clikNumber"
+                android:text="@string/_6"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_minus"
+                style="@style/CostomBaseButton.Orange"
+
+                android:onClick="operation"
+                android:text="@string/minus"
+                tools:ignore="UsingOnClickInXml" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="4">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_one"
+                style="@style/CostomBaseButton"
+
+                android:onClick="clikNumber"
+                android:text="@string/_1"
+                android:textSize="19sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_two"
+                style="@style/CostomBaseButton"
+                android:onClick="clikNumber"
+                android:text="@string/_2"
+                android:textSize="19sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tree"
+                style="@style/CostomBaseButton"
+
+                android:onClick="clikNumber"
+                android:text="@string/_3"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_plas"
+                style="@style/CostomBaseButton.Orange"
+                android:onClick="operation"
+                android:text="@string/plas"
+                android:textSize="19sp"
+                tools:ignore="UsingOnClickInXml" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="4">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_zero"
+                style="@style/CostomBaseButton"
+                android:layout_weight="2"
+                android:onClick="clikNumber"
+                android:text="@string/_0"
+                android:textAlignment="textStart"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/point"
+                style="@style/CostomBaseButton"
+                android:onClick="clikNumber"
+                android:text="@string/point"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_equally"
+                style="@style/CostomBaseButton.Orange"
+                android:onClick="clikEqual"
+                android:text="@string/equally"
+                tools:ignore="UsingOnClickInXml" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
