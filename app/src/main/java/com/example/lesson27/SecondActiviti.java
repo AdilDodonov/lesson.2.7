@@ -40,6 +40,7 @@ public class SecondActiviti extends AppCompatActivity {
                     intent.putExtra("Orginal",Orginal.getText().toString());
                     intent.putExtra("polbrandicy",brand.getText().toString());
                     startActivity(intent);
+                    //
                 }
 
             }
