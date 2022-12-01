@@ -27,7 +27,7 @@ public class SecondActiviti extends AppCompatActivity {
 
         Export.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//
                 if (policy.getText().toString().isEmpty() &&
                         productCategoru.getText().toString().isEmpty()&&
                         Orginal.getText().toString().isEmpty()&&brand.getText().toString().isEmpty()){
